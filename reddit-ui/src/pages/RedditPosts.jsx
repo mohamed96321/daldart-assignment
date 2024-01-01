@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import linkImage from "./assets/arrow-up-right.svg";
+import linkImage from "../assets/arrow-up-right.svg";
 
 function RedditPosts() {
   const [posts, setPosts] = useState([]);
@@ -42,9 +42,13 @@ function RedditPosts() {
   }
 
   if (error) {
-    <div className="flex items-center justify-center h-screen">
-      <div className="bg-red-500 text-white p-4 rounded-lg">Error: {error}</div>
-    </div>;
+    return (
+      <div className="flex items-center justify-center mt-2">
+        <div className="bg-red-500 text-white p-4 rounded-lg">
+          Error: {error}
+        </div>
+      </div>
+    );
   }
 
   const toggleText = (postId) => {
