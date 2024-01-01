@@ -1,2 +1,2 @@
 # daldart-assignment
-Get data from API in reddit and store this data to firebase and get data from firebase and display it in my UI
+Get data from API in Reddit and store this data to Firebase and get data from API and shown it by using Vite + React
